@@ -1,0 +1,218 @@
+/*RESET*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Gidole&display=swap');
+/*font-family: "Gidole", sans-serif;*/
+
+/*Aplicables a todos los HTML*/
+html{
+    font-family: "Gidole", sans-serif;
+    font-size: 62.5%; /*Ahora 1rem=10px*/
+}
+
+h{
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+/*Header*/
+header{
+    /* background-color: #A6B37D; */
+    background-image: url(../medios/multicam.jpg);
+    background-size:cover;
+}
+
+.escudoea{
+    width: 8%;
+    /* height: 8%; */
+}
+
+.escudoae{
+    width: 7.2%;
+    /* height: 8%; */   
+}
+
+div h1{
+    color: rgb(0, 0, 0);
+    font-family: "Stardos Stencil", system-ui;
+    font-style: normal;
+    text-align: center;
+    font-size: 400%;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.headerhijo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 15px;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: left   ;
+    padding-top: 20px;
+}
+
+header li{
+    background-color: rgb(177, 123, 6);
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    border: solid black 3px    
+}
+
+/*Footer*/
+footer div{
+    width: 25%;
+    /*border: solid black 3px;*/
+}
+
+footer{
+    display: flex;
+    background-color: #A6B37D;
+    font-size: 12 px;
+    justify-content: space-between;
+}
+
+footer a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 5px;
+    text-align: center;
+}
+
+.enlaces{
+    display: flex;
+    justify-content: left;
+    font-size: 25px;
+    flex-direction: column;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.divfooter{
+    display: flex;
+    justify-content:flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-footer{
+    display: flex;
+    padding-bottom: 20px;
+    width: 40%;
+}
+
+.notaautor{
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}   
+
+.divredes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituloredes{
+    display: flex;
+    justify-content: left;
+    font-size: 25px;
+    flex-direction: column;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.redes{
+    display: flex;
+    padding-bottom: 20px;
+    width: 13%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer img{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+
+
+/*INDEX*/
+
+.main_index{
+    background-image: url(../medios/Alas\ de\ aviador\ con\ moneda\ 1.jpg);
+    background-position: center;   
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+/*AERONAVES*/
+
+.main_aeronaves{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+/*ACTIVIDADES*/
+
+.main_actividades{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+/*GALERIA*/
+
+.main_galeria{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+/*CONTACTO*/
+
+.main_contacto{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+form label{
+font-weight: bold;
+text-decoration: underline;
+}
+
+form p{
+    font-weight: bold;
+    text-decoration: underline;  
+}
+.contacto_redes{
+    width: 4%;
+}
