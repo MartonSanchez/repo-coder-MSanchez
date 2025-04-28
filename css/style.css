@@ -486,7 +486,7 @@ iframe{
         font-size: 2rem;
     }
     header a{
-        font-size: 0.8rem;
+        font-size: 0.5rem;
     }
     .headerhijo{
         align-items: center;
@@ -496,7 +496,7 @@ iframe{
         padding-top: 10px;
     }
     header li{
-        padding: 5px;
+        padding: 2px;
         margin: 5px;
     }
 
@@ -530,6 +530,13 @@ iframe{
     .redes{
         padding-bottom: 10px;
         width: 50%;
+    }
+
+    /*HOME*/
+    .textoresenia{
+        font-size: 1rem;
+        font-weight: normal;
+        text-align: justify;
     }
     /*AERONAVES*/
     .contenedor-grid{
