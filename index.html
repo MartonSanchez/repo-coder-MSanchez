@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
     <title>La Aviación del Ejército</title>
 </head>
 
@@ -20,19 +21,45 @@
             
      </div>
      <nav class="headerhijodos">
-            <ul>
+            <!-- <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="./pages/aeronaves.html">AERONAVES</a></li>
                 <li><a href="./pages/actividades.html">PRINCIPALES ACTIVIDADES</a></li> 
                 <li><a href="./pages/galeria.html">GALERIA</a></li>
                 <li><a href="./pages/contacto.html">CONTACTO</a></li>
-            </ul>
+            </ul> -->
+            <ul class="navbar navbar-expand-md" class="nav justify-content-end">
+                <li class="nav-item">
+                  <a  class="text-white" class="h2" class="nav-link disabled" aria-disabled="true">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a  class="text-white" class="h2" class="nav-link active" aria-current="page" href="./pages/aeronaves.html">AERONAVES</a>
+                </li>
+                <li class="nav-item">
+                    <a  class="text-white" class="h2" class="nav-link active" href="./pages/actividades.html">PRINCIPALES ACTIVIDADES</a>
+                </li>
+                <li class="nav-item">
+                  <a  class="text-white" class="h2" class="nav-link active" href="./pages/galeria.html">GALERIA</a>
+                </li>
+                <li class="nav-item">
+                    <a  class="text-white" class="h2" class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                </li>
+              </ul>
         </nav>
     </header>
 
     <main class="main_index">
-    <h>Historia de la Aviación del Ejército Argentino</h>
-    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat quasi quos est temporibus, dignissimos blanditiis animi reiciendis nostrum perferendis optio, vero, a culpa vitae harum minus exercitationem ipsa aut id?Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quam hic fugit cupiditate obcaecati asperiores voluptas ipsum dolorem iusto ratione provident consequuntur suscipit, doloribus laudantium aliquam earum explicabo omnis voluptatum. </p>
+    <img class="alas-fondo" src="./medios/Alas de aviador con moneda 1.jpg" alt="alas">
+    <h class="tituloresenia">Historia de la Aviación del Ejército Argentino</h>
+    <p class="textoresenia">La aviación del Ejército Argentino tiene sus raíces a principios del siglo XX, cuando el país comenzó a interesarse por el desarrollo aeronáutico con fines militares. Fue una de las primeras naciones latinoamericanas en impulsar la aviación militar.
+        El 10 de agosto de 1912, se crea oficialmente la Escuela de Aviación Militar en El Palomar, bajo jurisdicción del Ejército. Este hecho marca el nacimiento de la aviación militar argentina. En esta etapa inicial, los aviones eran utilizados principalmente para reconocimiento, observación y entrenamiento.
+        Durante las décadas siguientes, la aviación del Ejército fue creciendo en capacidades, con participación destacada en ejercicios militares y en la formación de pilotos. Sin embargo, su desarrollo estaba aún limitado por recursos y tecnología.
+        En 1945, se produce un cambio fundamental: se crea la Fuerza Aérea Argentina como una fuerza armada independiente, separada del Ejército. Esto implicó que gran parte del material, infraestructura y personal de la aviación militar pasara a esta nueva institución. No obstante, el Ejército mantuvo algunas capacidades aéreas para tareas de apoyo táctico.
+        A partir de 1956, el Ejército Argentino retoma el desarrollo de su propia aviación ligera. Se crea la Aviación de Ejército, enfocada en misiones específicas como observación, enlace, evacuación médica, transporte de tropas y apoyo aéreo cercano, especialmente mediante helicópteros y aeronaves de ala fija liviana.
+        Durante las décadas siguientes, se incorporaron helicópteros como los Bell UH-1H Huey, que se volvieron emblemas de la Aviación de Ejército, así como aviones de transporte y reconocimiento.
+        Durante el Conflicto del Atlántico Sur (Guerra de Malvinas, 1982), la Aviación de Ejército tuvo una participación activa, realizando tareas de transporte, apoyo logístico y evacuación médica bajo condiciones extremadamente difíciles. Esto marcó un hito importante y demostró la capacidad operativa de estas unidades.
+        Hoy, la Aviación de Ejército sigue siendo un componente esencial del Ejército Argentino, con unidades distribuidas en distintas regiones del país. Opera aviones livianos y medianos, así como helicópteros, en tareas de apoyo logístico, emergencias, operaciones combinadas y ayuda humanitaria, tanto en el país como en misiones en el exterior.
+        </p>
     </main>
 
 </body>
@@ -40,7 +67,7 @@
 <footer>
     <div>    
     <h1 class="enlaces">Sitios de Interés</h1>
-        <ul>
+        <ul style="list-style: none;">
             <li><a href="http://www.argentina.gob.ar/defensa">Ministerio de Defensa (Sitio Oficial)</a></li>
             <li><a href="http://www.argentina.gob.ar/defensa/ejercito">Ejército Argentino (Sitio Oficial)</a></li>
             <li><a href="https://www.argentina.gob.ar/defensa/armada">Armada Argentina (Sitio Oficial)</a></li>
@@ -61,4 +88,5 @@
     </div>    
     
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </html> 

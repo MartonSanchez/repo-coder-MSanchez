@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Principales actividades</title>
 </head>
 
@@ -19,24 +20,42 @@
         </div>
 
         <nav>
-            <ul>   
+            <!-- <ul>   
                 <li><a href="../index.html">HOME</a></li>
                 <li><a href="./aeronaves.html">AERONAVES</a></li>
                 <li><a href="#">PRINCIPALES ACTIVIDADES</a></li>
-                <li><a href="./galeria.html">GALERIA MULTIMEDIA</a></li>
+                <li><a href="./galeria.html">GALERIA</a></li>
                 <li><a href="./contacto.html">CONTACTO</a></li>
-            </ul>
+            </ul> -->
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a  class="text-white" class="h2" class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a  class="text-white" class="h2" class="nav-link" href="./aeronaves.html">AERONAVES</a>
+                </li>
+                <li class="nav-item">
+                  <a  class="text-white" class="h2" class="nav-link disabled" aria-disabled="true">PRINCIPALES ACTIVIDADES</a>
+                </li>
+                <li class="nav-item">
+                  <a  class="text-white" class="h2" class="nav-link active" aria-current="page" href="./galeria.html">GALERIA</a>
+                </li>
+                <li class="nav-item">
+                    <a  class="text-white" class="h2" class="nav-link"  href="./contacto.html">CONTACTO</a>
+                </li>
+              </ul>
         </nav>    
     </header>
     <main class="main_actividades">
-        
-        <h2>Actividades Operacionales</h2>
+        <h1>Actividades llevadas a cabo por la Aviación del Ejército</h1>
+
+        <h2>Operacionales</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, fugit sunt esse quos soluta nisi molestiae eos, fugiat accusantium atque dolores necessitatibus quo, unde reprehenderit modi ullam odio aperiam explicabo!</p>
         
-        <h2>Actividades Conjuntas</h2>
+        <h2>Conjuntas</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore nulla cupiditate amet neque qui voluptatibus nostrum pariatur expedita optio quas aperiam dolor provident vitae deleniti unde natus, voluptate odio quaerat.</p>
         
-        <h2>Actividades de apoyo a la comunidad</h2>
+        <h2>Apoyo a la comunidad</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis at et cum corporis voluptas tempora odit veritatis vitae quis. Incidunt natus, doloribus blanditiis animi similique placeat quia pariatur neque minima!</p>
         
     </main>
@@ -45,7 +64,7 @@
 <<footer>
     <div>    
     <h1 class="enlaces">Sitios de Interés</h1>
-        <ul>
+         <ul style="list-style: none;">
             <li><a href="http://www.argentina.gob.ar/defensa">Ministerio de Defensa (Sitio Oficial)</a></li>
             <li><a href="http://www.argentina.gob.ar/defensa/ejercito">Ejército Argentino (Sitio Oficial)</a></li>
             <li><a href="https://www.argentina.gob.ar/defensa/armada">Armada Argentina (Sitio Oficial)</a></li>
@@ -66,4 +85,5 @@
     </div>    
     
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </html>

@@ -97,16 +97,18 @@ footer a{
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    list-style: none;
     color: white;
     font-weight: bold;
     font-size: 1.5rem;
-    margin: 5px;
+    margin: 2px;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .enlaces{
     display: flex;
-    justify-content: left;
+    text-align: center;
     font-size: 25px;
     flex-direction: column;
     text-transform: uppercase;
@@ -150,7 +152,7 @@ footer a{
 .redes{
     display: flex;
     padding-bottom: 20px;
-    width: 13%;
+    width: 70px;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -166,12 +168,37 @@ footer img{
 /*INDEX*/
 
 .main_index{
-    background-image: url(../medios/Alas\ de\ aviador\ con\ moneda\ 1.jpg);
-    background-position: center;   
-    background-size: contain;
-    background-repeat: no-repeat;
-    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    /* font-size: 2rem;
+    font-weight: bolder;
     text-align: center;
+    text-decoration: ;
+    padding: 10px; */
+}
+.alas-fondo{
+    position: absolute;
+    width: 70%;
+    opacity: 0.4;
+}
+.tituloresenia{
+    position: relative;
+    align-items: start;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px;
+}
+.textoresenia{
+    position:relative;
+    font-size: 2.1rem;
+    font-weight: bolder;
+    text-align:center;
+    padding: 10px;
 }
 
 
@@ -289,22 +316,72 @@ footer img{
 /*ACTIVIDADES*/
 
 .main_actividades{
+    display: flex;
+    flex-direction: column;
     font-size: 1.5rem;
-    text-align: justify;
+    text-align: center;
+    padding: 10px;
 }
-
+.main_actividades h1{
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding-bottom: 20px;
+}
+.main_actividades h2{
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+.main_actividades p{
+    padding-bottom: 20px;
+}
 /*GALERIA*/
 
 .main_galeria{
+    display: flex;
+    flex-direction: column;
     font-size: 1.5rem;
-    text-align: justify;
+    text-align: center;
+    text-decoration: underline;
+    padding: 20px;
 }
-
+.galeria-heli{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.galeria-avion{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
 /*CONTACTO*/
 
 .main_contacto{
     font-size: 1.5rem;
     text-align: justify;
+}
+.main_contacto img{
+    width: 8%;
+}
+.main_contacto h3{
+    text-decoration: underline;
+}
+/* .contacto_redes_texto{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    justify-items: self-start;
+    font-size: 1rem;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+} */
+form{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
 }
 
 form label{
@@ -316,12 +393,93 @@ form p{
     font-weight: bold;
     text-decoration: underline;  
 }
-.contacto_redes{
-    width: 4%;
+iframe{
+    width: 80%;
+    height: 80%;
 }
+.contacto_redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.main_contacto{
+    display: grid;
+    grid-template-areas:
+    "texto1 texto1 texto1"
+    "texto2 texto7 texto7"
+    "form mapa mapa"
+    "texto11 texto9 texto8"
+    "redes texto10 telefonos";
+    grid-template-columns: repeat(3,32%);
+    grid-template-rows: 80px 30px 500px 30px 80px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.contacto-texto1{
+    grid-area: texto1;
+}
+.contacto-texto2{
+    grid-area: texto2;
+}
+.contacto-formulario{
+    grid-area: form;
+}
+/*.contacto-texto3{
+    grid-area: texto3;
+}.contacto-texto4{
+    grid-area: texto4;
+}
+.contacto-casillero1{
+    grid-area: casillero1;
+}
+.contacto-casillero2{
+    grid-area: casillero2;
+}
+.contacto-casillero3{
+    grid-area: casillero3;
+}
+.contacto-texto5{
+    grid-area: texto5;
+}
+.contacto-casillero4{
+    grid-area: casillero4;
+}
+.contacto-botones{
+    grid-area: botones;
+} */
+.contacto-texto6{
+    grid-area: texto6;
+}
+.contacto-texto7{
+    grid-area: texto7;
+}
+.contacto-texto8{
+    grid-area: texto8;
+}
+.contacto-mapa{
+    grid-area: mapa;
+}
+.contacto-texto9{
+    grid-area: texto9;
+}
+.contacto-texto10{
+    grid-area: texto10;
+}
+.contacto-telefonos{
+    grid-area: telefonos;
+}
+.contacto-texto11{
+    grid-area: texto11;
+}
+.contacto_redes{
+    grid-area: redes;
+}
+
 
 /*RESPONSIVE*/
 /*MOBILE*/
+
 @media (max-width: 480px){
     /*HEADER*/
     div h1{
@@ -371,7 +529,7 @@ form p{
     }
     .redes{
         padding-bottom: 10px;
-        width: 30%;
+        width: 50%;
     }
     /*AERONAVES*/
     .contenedor-grid{
