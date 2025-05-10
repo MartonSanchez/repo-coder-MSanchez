@@ -1,0 +1,134 @@
+/*Header*/
+
+header{
+    background-image: url(../medios/multicam.jpg);
+    background-size:cover;
+    
+    .headerhijo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-top: 15px;
+        .escudoea{
+         width: 8%;
+        }
+
+        h1{
+         color: rgb(0, 0, 0);
+         font-family: "Stardos Stencil", system-ui;
+         font-style: normal;
+         text-align: center;
+         font-size: 400%;
+         text-decoration: underline;
+         font-weight: bold;
+        }
+
+        .escudoae{
+         width: 7.2%;
+        }
+    }
+
+    nav{
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: left   ;
+            padding-top: 20px;
+            li{
+                background-color: rgb(177, 123, 6);
+                display: flex;
+                padding: 10px;
+                margin: 10px;
+                border: solid black 3px;    
+                a{
+                 text-decoration: none;
+                 color: white;
+                 font-weight: bold;
+                 font-size: 2rem; 
+                }
+            }
+        }
+    }
+}
+
+
+/*Footer*/
+
+footer{
+    display: flex;
+    background-color: #A6B37D;
+    font-size: 12 px;
+    justify-content: space-between;
+    div{
+        width: 25%;
+        .enlaces{
+            display: flex;
+            text-align: center;
+            font-size: 25px;
+            flex-direction: column;
+            text-transform: uppercase;
+            padding-top: 10px;
+            padding-bottom: 20px;
+        }
+        ul{
+            a{
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                list-style: none;
+                color: white;
+                font-weight: bold;
+                font-size: 1.5rem;
+                margin: 2px;
+                text-align: center;
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+    .divfooter{
+        width: 25%;
+        display: flex;
+        justify-content:flex-end;
+        flex-direction: column;
+        align-items: center;
+        .logo-footer{
+            display: flex;
+            padding-bottom: 20px;
+            width: 40%;
+        }
+        .notaautor{
+            font-size: 1.2rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    }
+
+    .divredes{
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .tituloredes{
+            display: flex;
+            justify-content: left;
+            font-size: 25px;
+            flex-direction: column;
+            text-transform: uppercase;
+            padding-top: 10px;
+            padding-bottom: 20px;
+        }
+        .redes{
+            display: flex;
+            padding-bottom: 20px;
+            width: 70px;
+            flex-direction: column;
+            justify-content: space-between;
+            img{
+                display: flex;
+                align-items: center;
+                padding: 5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+/*Aeronaves*/
+.contenedor-grid{
+    font-size: 1.5rem;
+    text-align: justify;
+    display: grid;
+    grid-template-areas: 
+    "titulo1 titulo1 titulo1 titulo1"
+    "nombre1 nombre1 nombre1 nombre1"
+    "foto1 foto1 foto1 texto1"
+    "nombre2 nombre2 nombre2 nombre2"
+    "foto2 foto2 foto2 texto2"
+    "nombre3 nombre3 nombre3 nombre3"
+    "foto3 foto3 foto3 texto3"
+    "titulo2 titulo2 titulo2 titulo2"
+    "nombre4 nombre4 nombre5 nombre5"
+    "foto4 foto4 foto5 foto5"
+    "texto4 texto4 texto5 texto5"
+    "nombre6 nombre6 nombre7 nombre7"
+    "foto6 foto6 foto7 foto7"
+    "texto6 texto6 texto7 texto7";
+    grid-template-columns: repeat(4,24%);
+    grid-template-rows: 80px 50px 600px 50px 600px 50px 600px 80px 50px 500px 200px 50px 500px 200px;  
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    img{
+     width: 95%;
+     height: 95%;
+     border-radius: 9px 9px 9px 9px;
+     border: 5px;
+     box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.708); 
+    }
+
+    .grid-titulo-1{
+        grid-area: titulo1;
+    }
+    .grid-nombre-1{
+        grid-area: nombre1;
+    }
+    .grid-img-1{
+        grid-area: foto1;
+    }
+    .grid-texto-1{
+        grid-area: texto1;
+    }
+    .grid-nombre-2{
+        grid-area: nombre2;
+    }
+    .grid-img-2{
+        grid-area: foto2;
+    }
+    .grid-texto-2{
+        grid-area: texto2;
+    }
+    .grid-nombre-3{
+        grid-area: nombre3;
+    }
+    .grid-img-3{
+        grid-area: foto3;
+    }
+    .grid-texto-3{
+        grid-area: texto3;
+    }
+    .grid-titulo-2{
+        grid-area: titulo2;
+    }
+    .grid-nombre-4{
+        grid-area: nombre4;
+    }
+    .grid-nombre-5{
+        grid-area: nombre5;
+    }
+    .grid-nombre-6{
+        grid-area: nombre6;
+    }
+    .grid-nombre-7{
+        grid-area: nombre7;
+    }
+    .grid-img-4{
+        grid-area: foto4;
+    }
+    .grid-img-5{
+        grid-area: foto5;
+    }
+    .grid-img-6{
+        grid-area: foto6;
+    }
+    .grid-img-7{
+        grid-area: foto7;
+    }
+    .grid-texto-4{
+        grid-area: texto4;
+    }.grid-texto-5{
+        grid-area: texto5;
+    }.grid-texto-6{
+        grid-area: texto6;
+    }.grid-texto-7{
+        grid-area: texto7;
+    }
+}

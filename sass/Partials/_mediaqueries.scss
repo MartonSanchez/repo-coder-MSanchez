@@ -1,0 +1,96 @@
+/*RESPONSIVE*/
+/*MOBILE*/
+
+@media (max-width: 480px){
+    /*HEADER*/
+    div h1{
+        font-size: 2rem;
+    }
+    header a{
+        font-size: 0.5rem;
+    }
+    .headerhijo{
+        align-items: center;
+    }
+    header ul{
+        justify-content: center;
+        padding-top: 10px;
+    }
+    header li{
+        padding: 2px;
+        margin: 5px;
+    }
+
+    /*FOOTER*/
+    footer{
+        font-size: 9px;
+    }
+    footer a{
+        font-weight: lighter;
+        font-size: 0.8rem;
+        margin: 3px;
+    }
+    .enlaces{
+        justify-content: center;
+        font-size: 1rem;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+    .logo-footer{
+        padding-bottom: 10px;
+    }
+    .notaautor{
+        font-size: 0.5rem;
+    }
+    .tituloredes{
+        justify-content: center;
+        font-size: 1rem;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+    .redes{
+        padding-bottom: 10px;
+        width: 50%;
+    }
+
+    /*HOME*/
+    .textoresenia{
+        font-size: 1rem;
+        font-weight: normal;
+        text-align: justify;
+    }
+    /*AERONAVES*/
+    .contenedor-grid{
+        grid-template-areas:
+        "titulo1"
+        "nombre1"
+        "foto1"
+        "texto1"
+        "nombre2"
+        "foto2"
+        "texto2"
+        "nombre3"
+        "foto3"
+        "texto3"
+        "titulo2"
+        "nombre4"
+        "foto4"
+        "texto4"
+        "nombre5"
+        "foto5"
+        "texto5"
+        "nombre6"
+        "foto6"
+        "texto6"
+        "nombre7"
+        "foto7"
+        "texto7";
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px 25px repeat(2,300px) 25px repeat(2,300px) 25px repeat(2,300px) 40px 25px repeat(2,300px) 25px repeat(2,300px) 25px repeat(2,300px) 25px repeat(2,300px);
+
+    }
+}
+
+// /*TABLET*/
+// @media (min-width: 481px) and (max-width: 769px){
+// }

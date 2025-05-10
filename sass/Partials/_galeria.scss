@@ -1,0 +1,20 @@
+/*Galeria*/
+.main_galeria{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: underline;
+    padding: 20px;
+
+    .galeria-heli{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .galeria-avion{
+        @extend .galeria-heli;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+}

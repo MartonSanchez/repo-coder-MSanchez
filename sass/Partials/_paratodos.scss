@@ -1,0 +1,19 @@
+/*Aplicables a todos los HTML*/
+
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Gidole&display=swap');
+/*font-family: "Gidole", sans-serif;*/
+/*RESET*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Gidole", sans-serif;
+    font-size: 62.5%; /*Ahora 1rem=10px*/
+}
+
+
