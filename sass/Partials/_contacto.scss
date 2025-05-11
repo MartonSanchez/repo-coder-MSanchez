@@ -43,7 +43,7 @@
     .contacto-formulario{
         grid-area: form;
     }
-        .contacto-texto6{
+    .contacto-texto6{
         grid-area: texto6;
     }
     .contacto-texto7{
@@ -68,6 +68,12 @@
         grid-area: texto11;
     }
     .contacto_redes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
         grid-area: redes;
+        img{
+         width: 8%;    
+        }
     }
 }

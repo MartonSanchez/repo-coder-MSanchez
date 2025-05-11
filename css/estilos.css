@@ -76,7 +76,9 @@ footer div .enlaces {
   text-align: center;
   font-size: 25px;
   flex-direction: column;
+  font-family: "Stardos Stencil", system-ui;
   text-transform: uppercase;
+  text-decoration: underline;
   padding-top: 10px;
   padding-bottom: 20px;
 }
@@ -117,9 +119,11 @@ footer .divredes {
 footer .divredes .tituloredes {
   display: flex;
   justify-content: left;
+  font-family: "Stardos Stencil", system-ui;
   font-size: 25px;
   flex-direction: column;
   text-transform: uppercase;
+  text-decoration: underline;
   padding-top: 10px;
   padding-bottom: 20px;
 }
@@ -361,72 +365,145 @@ footer .divredes .redes img {
   grid-area: texto11;
 }
 .main_contacto .contacto_redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   grid-area: redes;
+}
+.main_contacto .contacto_redes img {
+  width: 8%;
 }
 
 /*RESPONSIVE*/
 /*MOBILE*/
 @media (max-width: 480px) {
   /*HEADER*/
-  div h1 {
-    font-size: 2rem;
-  }
-  header a {
-    font-size: 0.5rem;
-  }
   .headerhijo {
     align-items: center;
   }
-  header ul {
+  .headerhijo h1 {
+    font-size: 2rem;
+  }
+  .headerhijodos ul {
     justify-content: center;
     padding-top: 10px;
   }
-  header li {
+  .headerhijodos ul li {
     padding: 2px;
     margin: 5px;
+  }
+  .headerhijodos ul li a {
+    font-size: 1rem;
   }
   /*FOOTER*/
   footer {
     font-size: 9px;
   }
-  footer a {
+  footer div .enlaces {
+    justify-content: center;
+    font-size: 1rem;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-left: 18px;
+  }
+  footer div ul a {
     font-weight: lighter;
     font-size: 0.8rem;
-    margin: 3px;
+    margin-left: 1px;
   }
-  .enlaces {
-    justify-content: center;
-    font-size: 1rem;
-    padding-top: 5px;
+  footer .divfooter .logo-footer {
     padding-bottom: 10px;
   }
-  .logo-footer {
-    padding-bottom: 10px;
-  }
-  .notaautor {
+  footer .divfooter .notaautor {
     font-size: 0.5rem;
   }
-  .tituloredes {
+  footer .divredes .tituloredes {
     justify-content: center;
     font-size: 1rem;
     padding-top: 5px;
     padding-bottom: 10px;
   }
-  .redes {
+  footer .divredes .redes {
     padding-bottom: 10px;
     width: 50%;
+    margin-right: 15px;
   }
   /*HOME*/
-  .textoresenia {
-    font-size: 1rem;
+  .main_index .tituloresenia {
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+  }
+  .main_index .textoresenia {
+    font-size: 10px;
     font-weight: normal;
     text-align: justify;
   }
   /*AERONAVES*/
   .contenedor-grid {
     grid-template-areas: "titulo1" "nombre1" "foto1" "texto1" "nombre2" "foto2" "texto2" "nombre3" "foto3" "texto3" "titulo2" "nombre4" "foto4" "texto4" "nombre5" "foto5" "texto5" "nombre6" "foto6" "texto6" "nombre7" "foto7" "texto7";
-    grid-template-columns: 1fr;
-    grid-template-rows: 40px 25px repeat(2, 300px) 25px repeat(2, 300px) 25px repeat(2, 300px) 40px 25px repeat(2, 300px) 25px repeat(2, 300px) 25px repeat(2, 300px) 25px repeat(2, 300px);
+    grid-template-columns: 95%;
+    grid-template-rows: 40px 25px 300px 480px 25px 300px 380px 25px 300px 380px 40px 25px 300px 260px 25px 300px 210px 25px 300px 210px 25px 300px 250px;
+  }
+  /*ACTIVIDADES*/
+  .main_actividades h3 {
+    text-transform: uppercase;
+  }
+  .main_actividades p {
+    font-size: 10px;
+    font-weight: normal;
+    text-align: justify;
+    padding-bottom: 5px;
+  }
+  /*GALERIA*/
+  /*CONTACTO*/
+  .main_contacto {
+    grid-template-areas: "texto1" "texto2" "form" "texto7" "mapa" "texto11" "redes" "texto9" "texto10" "texto8" "telefonos";
+    grid-template-columns: 95%;
+    grid-template-rows: 80px 30px 500px 30px 300px 30px 50px repeat(3, 30px) 50px;
+  }
+  .main_contacto h2 {
+    text-align: center;
+    font-size: medium;
+  }
+  .main_contacto h3 {
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+  .main_contacto .contacto-mapa {
+    width: 80%;
+    height: 80%;
+  }
+  .main_contacto .contacto-texto1 {
+    grid-area: texto1;
+  }
+  .main_contacto .contacto-texto2 {
+    grid-area: texto2;
+  }
+  .main_contacto .contacto-formulario {
+    grid-area: form;
+  }
+  .main_contacto .contacto-texto7 {
+    grid-area: texto7;
+  }
+  .main_contacto .contacto-texto8 {
+    grid-area: texto8;
+  }
+  .main_contacto .contacto-mapa {
+    grid-area: mapa;
+  }
+  .main_contacto .contacto-texto9 {
+    grid-area: texto9;
+  }
+  .main_contacto .contacto-texto10 {
+    grid-area: texto10;
+  }
+  .main_contacto .contacto-telefonos {
+    grid-area: telefonos;
+  }
+  .main_contacto .contacto-texto11 {
+    grid-area: texto11;
   }
 }
 

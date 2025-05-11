@@ -54,10 +54,10 @@ header{
 
 
 /*Footer*/
-
+$footerbg: #A6B37D;
 footer{
     display: flex;
-    background-color: #A6B37D;
+    background-color: $footerbg;
     font-size: 12 px;
     justify-content: space-between;
     div{
@@ -67,7 +67,9 @@ footer{
             text-align: center;
             font-size: 25px;
             flex-direction: column;
+            font-family: "Stardos Stencil", system-ui;
             text-transform: uppercase;
+            text-decoration: underline;
             padding-top: 10px;
             padding-bottom: 20px;
         }
@@ -112,9 +114,11 @@ footer{
         .tituloredes{
             display: flex;
             justify-content: left;
+            font-family: "Stardos Stencil", system-ui;
             font-size: 25px;
             flex-direction: column;
             text-transform: uppercase;
+            text-decoration: underline;
             padding-top: 10px;
             padding-bottom: 20px;
         }
