@@ -488,7 +488,7 @@ footer .divredes .redes img {
   .contenedor-grid {
     grid-template-areas: "titulo1" "nombre1" "foto1" "texto1" "nombre2" "foto2" "texto2" "nombre3" "foto3" "texto3" "titulo2" "nombre4" "foto4" "texto4" "nombre5" "foto5" "texto5" "nombre6" "foto6" "texto6" "nombre7" "foto7" "texto7";
     grid-template-columns: 95%;
-    grid-template-rows: 40px 25px 300px 480px 25px 300px 380px 25px 300px 380px 40px 25px 300px 260px 25px 300px 210px 25px 300px 210px 25px 300px 250px;
+    grid-template-rows: 40px 25px 300px 610px 25px 300px 480px 25px 300px 480px 40px 25px 300px 350px 25px 300px 300px 25px 300px 300px 25px 300px 330px;
   }
   /*ACTIVIDADES*/
   .main_actividades h3 {
