@@ -42,6 +42,7 @@
     }
     .grid-texto-1{
         grid-area: texto1;
+        padding: 3%;
     }
     .grid-nombre-2{
         grid-area: nombre2;
@@ -51,6 +52,7 @@
     }
     .grid-texto-2{
         grid-area: texto2;
+        padding: 3%;
     }
     .grid-nombre-3{
         grid-area: nombre3;
@@ -60,6 +62,7 @@
     }
     .grid-texto-3{
         grid-area: texto3;
+        padding: 3%;
     }
     .grid-titulo-2{
         grid-area: titulo2;
@@ -90,11 +93,18 @@
     }
     .grid-texto-4{
         grid-area: texto4;
-    }.grid-texto-5{
-        grid-area: texto5;
-    }.grid-texto-6{
-        grid-area: texto6;
-    }.grid-texto-7{
-        grid-area: texto7;
+        padding: 3%;
     }
-}
+    .grid-texto-5{
+        grid-area: texto5;
+        padding: 3%;
+    }
+    .grid-texto-6{
+        grid-area: texto6;
+        padding: 3%;
+    }
+    .grid-texto-7{
+        grid-area: texto7;
+        padding: 3%;
+    }
+}   

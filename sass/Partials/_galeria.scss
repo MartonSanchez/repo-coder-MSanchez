@@ -4,6 +4,7 @@
     flex-direction: column;
     font-size: 1.5rem;
     text-align: center;
+    align-items: center;
     text-decoration: underline;
     padding: 20px;
 
@@ -12,9 +13,15 @@
         flex-direction: column;
         padding-bottom: 20px;
     }
+    #carouselHeli{
+        width: 45%;
+    }
     .galeria-avion{
         @extend .galeria-heli;
         padding-bottom: 10px;
         padding-top: 10px;
+    }
+    #carouselAvion{
+        width: 45%;
     }
 }

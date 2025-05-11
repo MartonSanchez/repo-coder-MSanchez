@@ -60,6 +60,13 @@ header nav ul li a {
   font-weight: bold;
   font-size: 2rem;
 }
+header nav ul li:hover {
+  background-color: rgb(39, 128, 252);
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+  transform: scale(1.1, 1.1) rotate(1deg);
+}
 
 /*Footer*/
 footer {
@@ -100,11 +107,34 @@ footer .divfooter {
   justify-content: flex-end;
   flex-direction: column;
   align-items: center;
+  /*Keyframes*/
 }
 footer .divfooter .logo-footer {
   display: flex;
   padding-bottom: 20px;
   width: 40%;
+  animation-name: giros;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+}
+@keyframes giros {
+  0% {
+    transform: rotateY(0deg);
+  }
+  25% {
+    transform: rotateY(90deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  75% {
+    transform: rotateY(270deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 footer .divfooter .notaautor {
   font-size: 1.2rem;
@@ -200,6 +230,7 @@ footer .divredes .redes img {
 }
 .contenedor-grid .grid-texto-1 {
   grid-area: texto1;
+  padding: 3%;
 }
 .contenedor-grid .grid-nombre-2 {
   grid-area: nombre2;
@@ -209,6 +240,7 @@ footer .divredes .redes img {
 }
 .contenedor-grid .grid-texto-2 {
   grid-area: texto2;
+  padding: 3%;
 }
 .contenedor-grid .grid-nombre-3 {
   grid-area: nombre3;
@@ -218,6 +250,7 @@ footer .divredes .redes img {
 }
 .contenedor-grid .grid-texto-3 {
   grid-area: texto3;
+  padding: 3%;
 }
 .contenedor-grid .grid-titulo-2 {
   grid-area: titulo2;
@@ -248,15 +281,19 @@ footer .divredes .redes img {
 }
 .contenedor-grid .grid-texto-4 {
   grid-area: texto4;
+  padding: 3%;
 }
 .contenedor-grid .grid-texto-5 {
   grid-area: texto5;
+  padding: 3%;
 }
 .contenedor-grid .grid-texto-6 {
   grid-area: texto6;
+  padding: 3%;
 }
 .contenedor-grid .grid-texto-7 {
   grid-area: texto7;
+  padding: 3%;
 }
 
 /*Actividades*/
@@ -286,6 +323,7 @@ footer .divredes .redes img {
   flex-direction: column;
   font-size: 1.5rem;
   text-align: center;
+  align-items: center;
   text-decoration: underline;
   padding: 20px;
 }
@@ -294,9 +332,15 @@ footer .divredes .redes img {
   flex-direction: column;
   padding-bottom: 20px;
 }
+.main_galeria #carouselHeli {
+  width: 45%;
+}
 .main_galeria .galeria-avion {
   padding-bottom: 10px;
   padding-top: 10px;
+}
+.main_galeria #carouselAvion {
+  width: 45%;
 }
 
 /*Contacto*/
@@ -457,6 +501,12 @@ footer .divredes .redes img {
     padding-bottom: 5px;
   }
   /*GALERIA*/
+  .main_galeria #carouselHeli {
+    width: 80%;
+  }
+  .main_galeria #carouselAvion {
+    width: 80%;
+  }
   /*CONTACTO*/
   .main_contacto {
     grid-template-areas: "texto1" "texto2" "form" "texto7" "mapa" "texto11" "redes" "texto9" "texto10" "texto8" "telefonos";
