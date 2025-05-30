@@ -304,12 +304,12 @@ footer .divredes .redes img {
   text-align: center;
   padding: 10px;
 }
-.main_actividades h1 {
+.main_actividades h2 {
   text-transform: uppercase;
   text-decoration: underline;
   padding-bottom: 20px;
 }
-.main_actividades h2 {
+.main_actividades h3 {
   text-decoration: underline;
   padding-bottom: 10px;
 }
@@ -512,6 +512,144 @@ footer .divredes .redes img {
     grid-template-areas: "texto1" "texto2" "form" "texto7" "mapa" "texto11" "redes" "texto9" "texto10" "texto8" "telefonos";
     grid-template-columns: 95%;
     grid-template-rows: 80px 30px 500px 30px 300px 30px 50px repeat(3, 30px) 50px;
+  }
+  .main_contacto h2 {
+    text-align: center;
+    font-size: medium;
+  }
+  .main_contacto h3 {
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+  .main_contacto .contacto-mapa {
+    width: 80%;
+    height: 80%;
+  }
+  .main_contacto .contacto-texto1 {
+    grid-area: texto1;
+  }
+  .main_contacto .contacto-texto2 {
+    grid-area: texto2;
+  }
+  .main_contacto .contacto-formulario {
+    grid-area: form;
+  }
+  .main_contacto .contacto-texto7 {
+    grid-area: texto7;
+  }
+  .main_contacto .contacto-texto8 {
+    grid-area: texto8;
+  }
+  .main_contacto .contacto-mapa {
+    grid-area: mapa;
+  }
+  .main_contacto .contacto-texto9 {
+    grid-area: texto9;
+  }
+  .main_contacto .contacto-texto10 {
+    grid-area: texto10;
+  }
+  .main_contacto .contacto-telefonos {
+    grid-area: telefonos;
+  }
+  .main_contacto .contacto-texto11 {
+    grid-area: texto11;
+  }
+}
+/*TABLET*/
+@media (min-width: 481px) and (max-width: 992px) {
+  /*HEADER*/
+  .headerhijo {
+    align-items: center;
+  }
+  .headerhijo h1 {
+    font-size: 2rem;
+  }
+  .headerhijodos ul {
+    justify-content: space-evenly;
+    padding-top: 10px;
+  }
+  .headerhijodos ul li {
+    padding: 2px;
+    margin: 5px;
+  }
+  .headerhijodos ul li a {
+    font-size: 1.5rem;
+  }
+  /*FOOTER*/
+  footer {
+    font-size: 9px;
+  }
+  footer div .enlaces {
+    justify-content: center;
+    font-size: 1.5rem;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-left: 18px;
+  }
+  footer div ul a {
+    font-weight: light;
+    font-size: 1.2rem;
+    margin-left: 1px;
+  }
+  footer .divfooter .logo-footer {
+    padding-bottom: 10px;
+  }
+  footer .divfooter .notaautor {
+    font-size: 0.8rem;
+  }
+  footer .divredes .tituloredes {
+    justify-content: center;
+    font-size: 1.5rem;
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+  footer .divredes .redes {
+    padding-bottom: 10px;
+    width: 30%;
+    margin-right: 15px;
+  }
+  /*HOME*/
+  .main_index .tituloresenia {
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+  }
+  .main_index .textoresenia {
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: justify;
+    padding: 15px;
+  }
+  /*AERONAVES*/
+  .contenedor-grid {
+    grid-template-areas: "titulo1" "nombre1" "foto1" "texto1" "nombre2" "foto2" "texto2" "nombre3" "foto3" "texto3" "titulo2" "nombre4" "foto4" "texto4" "nombre5" "foto5" "texto5" "nombre6" "foto6" "texto6" "nombre7" "foto7" "texto7";
+    grid-template-columns: 95%;
+    grid-template-rows: 60px 38px 450px 350px 38px 450px 250px 38px 450px 250px 60px 38px 450px 200px 38px 450px 190px 38px 450px 190px 38px 450px 200px;
+  }
+  /*ACTIVIDADES*/
+  .main_actividades h3 {
+    text-transform: uppercase;
+  }
+  .main_actividades p {
+    font-size: 15px;
+    font-weight: normal;
+    text-align: justify;
+    padding-bottom: 5px;
+  }
+  /*GALERIA*/
+  .main_galeria #carouselHeli {
+    width: 80%;
+  }
+  .main_galeria #carouselAvion {
+    width: 80%;
+  }
+  /*CONTACTO*/
+  .main_contacto {
+    grid-template-areas: "texto1 texto1" "texto2 texto7" "form mapa" "texto11 texto9" "redes texto10" "texto8 texto8" "telefonos telefonos";
+    grid-template-columns: repeat(2, 46%);
+    grid-template-rows: 80px 50px 500px 50px 50px 30px 50px;
   }
   .main_contacto h2 {
     text-align: center;
